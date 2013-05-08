@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+   <PreferenceCategory 
+       android:title="@string/data_send_period_title"
+       android:key="data_send_period_setting">
+          <CheckBoxPreference 
+           android:key="enable_bulk"
+           android:title="Enable Bulk Send"
+           android:summary="Send Data in bulk per day"
+           android:defaultValue="true"
+           android:disableDependentsState="true"/>
+       <com.fga.smartstats.mobile.SeekBarPreference
+            android:key="data_send_period"
+ 			android:dependency="enable_bulk"
+                android:title="Send Data Period"
+                android:summary= "Adjust Send Period in Hours"
+                android:defaultValue="1"
+                android:max="6">
+       </com.fga.smartstats.mobile.SeekBarPreference>
+    
+       <ListPreference
+           android:key="connection_select"
+           android:title="Connection Type"
+           android:summary="Determine Connection Type for sending data"
+           android:entries="@array/conn_types"
+           android:entryValues="@array/conn_values"></ListPreference>
+   </PreferenceCategory>
+</PreferenceScreen>

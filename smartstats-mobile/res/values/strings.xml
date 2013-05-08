@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartStats</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="getBattery"></string>
+    <string name="about">About</string>
+    <string name="listTitle">Running Applications</string>
+    <string name="dataUpload">Data Upload</string>
+    <string name="data_send_period_title">DATA SEND PERIOD</string>
+    <string name ="connection_select">connection_select</string>
+</resources>

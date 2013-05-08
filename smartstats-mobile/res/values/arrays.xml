@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="conn_types">
+        <item>WIFI</item>
+        <item>3G</item>
+        <item>BOTH</item>
+    </string-array>
+    <string-array 
+        name="conn_values">
+        <item>WIFI</item>
+        <item>3G</item>
+        <item>WIFI or 3G</item>
+    </string-array>
+</resources>
